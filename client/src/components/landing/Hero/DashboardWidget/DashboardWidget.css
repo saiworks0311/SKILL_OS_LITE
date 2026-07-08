@@ -1,0 +1,229 @@
+/* ===========================================
+   DASHBOARD SHOWCASE
+=========================================== */
+
+.dashboard-showcase{
+
+    padding:120px 0;
+
+    background:#11151d;
+
+}
+
+.dashboard-preview-card{
+
+    margin-top:70px;
+
+    display:flex;
+
+    background:#181c24;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+}
+
+/* ================= Sidebar ================= */
+
+.dashboard-sidebar{
+
+    width:220px;
+
+    background:#141821;
+
+    padding:35px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.sidebar-item{
+
+    padding:15px;
+
+    border-radius:12px;
+
+    color:#b8bcc7;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar-item:hover{
+
+    background:#20252f;
+
+    color:white;
+
+}
+
+.sidebar-item.active{
+
+    background:linear-gradient(135deg,#7C5CFF,#9476ff);
+
+    color:white;
+
+}
+
+/* ================= Main ================= */
+
+.dashboard-main{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+.dashboard-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+/* ================= Cards ================= */
+
+.mini-card,
+.large-card{
+
+    background:#20252f;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.mini-card h3,
+.large-card h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.mini-card h1{
+
+    color:#7C5CFF;
+
+    font-size:52px;
+
+}
+
+.large-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.large-card li{
+
+    color:#d6d6d6;
+
+    margin-bottom:12px;
+
+}
+
+.large-card p{
+
+    color:#b4b7c3;
+
+    line-height:1.8;
+
+}
+
+.large-card button{
+
+    margin-top:25px;
+
+    background:#7C5CFF;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.large-card button:hover{
+
+    background:#9476ff;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1000px){
+
+.dashboard-preview-card{
+
+flex-direction:column;
+
+}
+
+.dashboard-sidebar{
+
+width:100%;
+
+flex-direction:row;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.dashboard-row{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-main{
+
+padding:20px;
+
+}
+
+.dashboard-sidebar{
+
+padding:20px;
+
+}
+
+}

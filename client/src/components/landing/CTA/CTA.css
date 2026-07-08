@@ -1,0 +1,188 @@
+/* ===========================================
+   CTA SECTION
+=========================================== */
+
+.cta-section{
+
+    padding:120px 0;
+
+    background:#0D1117;
+
+}
+
+.cta-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:70px 50px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,92,255,.18),
+        rgba(83,216,251,.08)
+    );
+
+    border:1px solid rgba(124,92,255,.25);
+
+    backdrop-filter:blur(20px);
+
+}
+
+/* ======================== */
+
+.cta-card h2{
+
+    font-size:48px;
+
+    color:white;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+.cta-card p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#b6bcc8;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+/* ======================== */
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ======================== */
+
+.cta-primary{
+
+    background:linear-gradient(
+        135deg,
+        #7C5CFF,
+        #9476ff
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:16px 36px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cta-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(124,92,255,.35);
+
+}
+
+/* ======================== */
+
+.cta-secondary{
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:white;
+
+    padding:16px 36px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cta-secondary:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+/* ======================== */
+
+@media(max-width:768px){
+
+    .cta-section{
+
+        padding:80px 0;
+
+    }
+
+    .cta-card{
+
+        padding:50px 25px;
+
+    }
+
+    .cta-card h2{
+
+        font-size:34px;
+
+    }
+
+    .cta-card p{
+
+        font-size:16px;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .cta-primary,
+    .cta-secondary{
+
+        width:100%;
+
+    }
+
+}

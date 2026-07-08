@@ -1,0 +1,281 @@
+/* ==========================================================
+   Skill OS Lite
+   Landing Navbar
+========================================================== */
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:18px 0;
+    transition:all .35s ease;
+}
+
+.navbar.scrolled{
+    background:rgba(13,17,23,.82);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+/* ===========================
+   WRAPPER
+=========================== */
+
+.navbar-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    font-weight:700;
+}
+
+.logo-icon{
+    width:42px;
+    height:42px;
+    border-radius:14px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-accent)
+    );
+
+    font-size:18px;
+    color:white;
+}
+
+.logo-text{
+    font-size:1.45rem;
+    font-weight:800;
+    letter-spacing:.4px;
+}
+
+.logo-text span{
+    color:var(--color-primary);
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.nav-menu{
+
+    display:flex;
+    align-items:center;
+    gap:32px;
+
+}
+
+.nav-menu a{
+
+    color:var(--color-text-secondary);
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+    position:relative;
+
+    font-weight:500;
+
+}
+
+.nav-menu a:hover{
+
+    color:white;
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:var(--color-primary);
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+.nav-login{
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:transparent;
+
+    color:white;
+
+    padding:11px 22px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.nav-login:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+/* ===========================
+   PRIMARY BUTTON
+=========================== */
+
+.nav-primary{
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        var(--color-primary),
+        #9d82ff
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.nav-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(124,92,255,.35);
+
+}
+
+/* ===========================
+   MOBILE BUTTON
+=========================== */
+
+.mobile-button{
+
+    display:none;
+
+    color:white;
+
+    background:none;
+
+    font-size:1.4rem;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+    .nav-menu{
+
+        gap:22px;
+
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .mobile-button{
+
+        display:block;
+
+        z-index:1001;
+
+    }
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:82px;
+
+        left:-100%;
+
+        width:100%;
+
+        background:#161B22;
+
+        display:flex;
+
+        flex-direction:column;
+
+        padding:45px;
+
+        gap:28px;
+
+        transition:.35s;
+
+        border-top:1px solid rgba(255,255,255,.05);
+
+    }
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+    .nav-login,
+
+    .nav-primary{
+
+        width:100%;
+
+    }
+
+}

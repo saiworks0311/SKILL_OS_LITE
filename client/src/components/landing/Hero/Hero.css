@@ -1,0 +1,603 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero-section{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:140px 0 90px;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top left,
+    rgba(124,92,255,.18),
+    transparent 35%),
+    radial-gradient(circle at bottom right,
+    rgba(77,208,225,.12),
+    transparent 30%),
+    var(--color-bg);
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:center;
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.hero-left{
+    z-index:2;
+}
+
+.hero-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    background:rgba(124,92,255,.12);
+
+    border:1px solid rgba(124,92,255,.3);
+
+    color:#8d72ff;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+}
+
+.hero-left h1{
+
+    font-size:5rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+
+}
+
+.hero-left p{
+
+    color:#B6BAC8;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    max-width:560px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:55px;
+
+}
+
+.hero-primary{
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#7c5cff,#9b7fff);
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.hero-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(124,92,255,.35);
+
+}
+
+.hero-secondary{
+
+    padding:16px 34px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:transparent;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.hero-secondary:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.hero-stats{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.stat-card{
+
+    width:160px;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#181C24;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#7c5cff;
+
+}
+
+.stat-card h3{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:#9ca3af;
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.hero-right{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.dashboard-preview{
+
+    width:100%;
+
+    max-width:620px;
+
+    background:#181C24;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 35px 70px rgba(0,0,0,.4);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 26px;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.dashboard-header h4{
+
+    color:white;
+
+    font-size:1.2rem;
+
+}
+
+.window-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.window-buttons span{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+}
+
+.red{
+    background:#ff5f57;
+}
+
+.yellow{
+    background:#febc2e;
+}
+
+.green{
+    background:#28c840;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.dashboard-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    padding:24px;
+
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.progress-card,
+.task-card,
+.xp-card,
+.continue-card{
+
+    background:#20252d;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    padding:22px;
+
+    min-height:180px;
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.progress-card:hover,
+.task-card:hover,
+.xp-card:hover,
+.continue-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#7c5cff;
+
+}
+
+.progress-card h5,
+.task-card h5,
+.xp-card h5,
+.continue-card h5{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#2f3641;
+
+    margin-bottom:18px;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#7c5cff,#4dd0e1);
+
+}
+
+.progress-card p{
+
+    color:#B6BAC8;
+
+}
+
+/* ==========================================
+   TASKS
+========================================== */
+
+.task-card ul{
+
+    padding-left:18px;
+
+    color:#D1D5DB;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+   XP
+========================================== */
+
+.xp-card{
+
+    justify-content:center;
+
+}
+
+.xp-card h2{
+
+    color:white;
+
+    font-size:54px;
+
+    margin:15px 0;
+
+}
+
+.xp-card p{
+
+    color:#B6BAC8;
+
+}
+
+/* ==========================================
+   CONTINUE
+========================================== */
+
+.continue-card p{
+
+    color:#B6BAC8;
+
+    line-height:1.8;
+
+}
+
+.continue-card button{
+
+    margin-top:auto;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#7c5cff;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.continue-card button:hover{
+
+    background:#9276ff;
+
+}
+
+/* ==========================================
+   FLOATING CARDS
+========================================== */
+
+.floating-card{
+
+    position:absolute;
+
+    right:-40px;
+
+    top:120px;
+
+    background:#20252d;
+
+    color:white;
+
+    padding:14px 20px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.floating-card.two{
+
+    top:auto;
+
+    bottom:60px;
+
+    right:-20px;
+
+    animation-delay:2s;
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-left p{
+
+margin:auto;
+
+}
+
+.hero-buttons,
+.hero-stats{
+
+justify-content:center;
+
+}
+
+.hero-right{
+
+margin-top:60px;
+
+}
+
+.floating-card{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-left h1{
+
+font-size:3.2rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.dashboard-content{
+
+grid-template-columns:1fr;
+
+}
+
+.stat-card{
+
+width:100%;
+
+}
+
+.hero-stats{
+
+flex-direction:column;
+
+}
+
+}

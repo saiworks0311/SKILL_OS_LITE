@@ -1,0 +1,316 @@
+/* ==========================================================
+   Skill OS Lite
+   Global Animation Library
+========================================================== */
+
+/* ==========================================================
+   FADE IN
+========================================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.fade-in {
+
+    animation: fadeIn 0.8s ease forwards;
+
+}
+
+/* ==========================================================
+   SLIDE UP
+========================================================== */
+
+@keyframes slideUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.slide-up {
+
+    animation: slideUp 0.8s ease forwards;
+
+}
+
+/* ==========================================================
+   SLIDE LEFT
+========================================================== */
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+.slide-left {
+
+    animation: slideLeft .8s ease forwards;
+
+}
+
+/* ==========================================================
+   SLIDE RIGHT
+========================================================== */
+
+@keyframes slideRight {
+
+    from {
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.slide-right{
+
+    animation:slideRight .8s ease forwards;
+
+}
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.floating{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   SCALE IN
+========================================================== */
+
+@keyframes scaleIn{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.scale-in{
+
+    animation:scaleIn .5s ease forwards;
+
+}
+
+/* ==========================================================
+   GLOW
+========================================================== */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 5px rgba(124,92,255,.2);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 25px rgba(124,92,255,.6);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 5px rgba(124,92,255,.2);
+
+    }
+
+}
+
+.glow{
+
+    animation:glow 2s infinite;
+
+}
+
+/* ==========================================================
+   BUTTON HOVER
+========================================================== */
+
+.hover-lift{
+
+    transition:all .3s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.card-hover{
+
+    transition:all .35s ease;
+
+}
+
+.card-hover:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+/* ==========================================================
+   PROGRESS BAR
+========================================================== */
+
+@keyframes progressFill{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+.progress-animation{
+
+    animation:progressFill 1.4s ease forwards;
+
+}
+
+/* ==========================================================
+   SPIN
+========================================================== */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.spin{
+
+    animation:spin 1s linear infinite;
+
+}
+
+/* ==========================================================
+   BOUNCE
+========================================================== */
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+.bounce{
+
+    animation:bounce 1.5s infinite;
+
+}

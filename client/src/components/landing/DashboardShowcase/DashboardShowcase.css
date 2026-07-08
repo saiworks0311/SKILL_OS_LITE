@@ -1,0 +1,153 @@
+/* ===========================================
+   DASHBOARD SHOWCASE
+=========================================== */
+
+.dashboard-showcase{
+    padding:120px 0;
+    background:#11151d;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#7C5CFF;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    margin-top:15px;
+    font-size:52px;
+    color:white;
+}
+
+.section-heading p{
+    margin-top:20px;
+    color:#a5acb8;
+    font-size:18px;
+}
+
+/* ========================= */
+
+.dashboard-preview-card{
+    display:flex;
+    background:#181c24;
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.06);
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+}
+
+/* ========================= */
+
+.dashboard-sidebar{
+    width:220px;
+    background:#141821;
+    padding:30px 20px;
+}
+
+.sidebar-item{
+    padding:14px 18px;
+    color:#c2c8d4;
+    border-radius:12px;
+    margin-bottom:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sidebar-item:hover{
+    background:#20252f;
+}
+
+.sidebar-item.active{
+    background:#7C5CFF;
+    color:white;
+}
+
+/* ========================= */
+
+.dashboard-main{
+    flex:1;
+    padding:35px;
+}
+
+.dashboard-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-bottom:24px;
+}
+
+.mini-card,
+.large-card{
+    background:#20252f;
+    border-radius:18px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.mini-card h3,
+.large-card h3{
+    color:white;
+    margin-bottom:20px;
+}
+
+.mini-card h1{
+    color:#7C5CFF;
+    font-size:56px;
+}
+
+.large-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.large-card li{
+    margin-bottom:14px;
+    color:#d4d7de;
+}
+
+.large-card p{
+    color:#b2b7c2;
+    line-height:1.8;
+}
+
+.large-card button{
+    margin-top:25px;
+    background:#7C5CFF;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.large-card button:hover{
+    background:#9476ff;
+}
+
+/* ========================= */
+
+@media(max-width:992px){
+
+.dashboard-preview-card{
+    flex-direction:column;
+}
+
+.dashboard-sidebar{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.dashboard-row{
+    grid-template-columns:1fr;
+}
+
+}

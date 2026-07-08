@@ -1,0 +1,215 @@
+/* ==========================================================
+   Skill OS Lite
+   Global Styles
+========================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Import Theme Variables */
+@import "./variables.css";
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:var(--font-primary);
+
+    background:var(--color-bg);
+
+    color:var(--color-text);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================================
+   ROOT APP
+========================================================== */
+
+#root{
+
+    width:100%;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-family:inherit;
+
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1{
+
+    font-size:var(--font-4xl);
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:var(--font-3xl);
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:var(--font-xl);
+
+    font-weight:600;
+
+}
+
+p{
+
+    color:var(--color-text-secondary);
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--color-bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-primary-hover);
+
+}

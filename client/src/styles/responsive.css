@@ -1,0 +1,134 @@
+/* ==========================================================
+   Skill OS Lite
+   Global Responsive Styles
+========================================================== */
+
+/* ===========================
+   Large Desktop (1440px+)
+=========================== */
+
+@media screen and (min-width: 1440px){
+
+    .container{
+
+        max-width:1400px;
+
+    }
+
+}
+
+/* ===========================
+   Laptop (1024px - 1439px)
+=========================== */
+
+@media screen and (max-width:1439px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+}
+
+/* ===========================
+   Tablet (768px - 1023px)
+=========================== */
+
+@media screen and (max-width:1023px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2.3rem;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+}
+
+/* ===========================
+   Mobile (767px and below)
+=========================== */
+
+@media screen and (max-width:767px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    h1{
+
+        font-size:2.3rem;
+
+    }
+
+    h2{
+
+        font-size:1.8rem;
+
+    }
+
+    h3{
+
+        font-size:1.2rem;
+
+    }
+
+    p{
+
+        font-size:.95rem;
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+}
+
+/* ===========================
+   Small Mobile (480px)
+=========================== */
+
+@media screen and (max-width:480px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.6rem;
+
+    }
+
+    section{
+
+        padding:50px 0;
+
+    }
+
+}
