@@ -6,12 +6,12 @@ import {
 
 import { auth } from "../firebase/firebase";
 
-// Register User
+// Register
 export const registerUser = (email, password) => {
   return createUserWithEmailAndPassword(auth, email, password);
 };
 
-// Login User
+// Login
 export const loginUser = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password);
 };

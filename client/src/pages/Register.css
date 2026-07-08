@@ -1,49 +1,54 @@
-.register-container{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#0f172a;
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d1117;
 }
 
-.register-card{
-    width:420px;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-    padding:40px;
-    border-radius:20px;
-    background:#1e293b;
+.register-card {
+  width: 420px;
+  background: #161b22;
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.register-card h1{
-    color:white;
-    text-align:center;
+.register-card h1 {
+  color: white;
+  text-align: center;
 }
 
 .register-card input,
-.register-card select{
-    padding:14px;
-    border:none;
-    border-radius:10px;
-    font-size:15px;
+.register-card select {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
 }
 
-.register-card button{
-    padding:15px;
-    border:none;
-    border-radius:10px;
-    background:#8b5cf6;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
+.register-card button {
+  padding: 14px;
+  background: #7c5cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
 }
 
-.register-card p{
-    color:white;
-    text-align:center;
+.register-card button:hover {
+  background: #6847ff;
 }
 
-.register-card a{
-    color:#a855f7;
+.register-card p {
+  color: white;
+  text-align: center;
+}
+
+.register-card a {
+  color: #7c5cff;
+  text-decoration: none;
 }
