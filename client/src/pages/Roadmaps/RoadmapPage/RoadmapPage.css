@@ -1,0 +1,104 @@
+.roadmap-page {
+  padding: 40px;
+  background: linear-gradient(180deg, #0f1117, #12141d);
+  min-height: 100vh;
+  color: white;
+}
+
+.progress-header {
+  margin-bottom: 35px;
+}
+
+.module-card {
+  background: #1b1e27;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  border-color: #7c5cfc;
+  box-shadow: 0 15px 40px rgba(124, 92, 252, 0.2);
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.module-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.module-status {
+  color: #b8bfd3;
+  margin-top: 8px;
+}
+
+.lesson-list {
+  margin-top: 25px;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #2a2e3b;
+}
+
+.lesson-item:last-child {
+  border-bottom: none;
+}
+
+.resource-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.resource-btn {
+  background: #252938;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.resource-btn:hover {
+  background: #7c5cfc;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: #2f3346;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg,#7c5cfc,#53d8fb);
+}
+
+.progress-header h1{
+  font-size:52px;
+  margin-bottom:10px;
+}
+
+.progress-header h3{
+  color:#c7cce2;
+  margin-bottom:15px;
+}

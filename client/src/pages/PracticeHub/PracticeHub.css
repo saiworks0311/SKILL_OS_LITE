@@ -1,0 +1,59 @@
+.practice-page{
+    padding:40px;
+    color:white;
+    min-height:100vh;
+    background:#0f1117;
+}
+
+.practice-subtitle{
+    color:#b7bdd0;
+    margin:10px 0 35px;
+}
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.practice-card{
+    background:#1b1e27;
+    padding:25px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.practice-card:hover{
+    transform:translateY(-4px);
+    border:1px solid #7c5cfc;
+}
+
+.practice-card h2{
+    margin-bottom:15px;
+}
+
+.practice-card p{
+    color:#bfc4d8;
+    line-height:1.6;
+}
+
+.practice-card span{
+    display:inline-block;
+    margin-top:15px;
+    color:#7c5cfc;
+    font-weight:600;
+}
+
+.practice-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#7c5cfc;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.practice-btn:hover{
+    background:#6b4ef0;
+}
