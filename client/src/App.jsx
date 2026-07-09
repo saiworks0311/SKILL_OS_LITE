@@ -9,7 +9,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Roadmaps from "./pages/Roadmaps/Roadmaps";
 import RoadmapPage from "./pages/Roadmaps/RoadmapPage/RoadmapPage";
 
-import PracticeHub from "./pages/practiceHub/PracticeHub";
+import PracticeHub from "./pages/PracticeHub/PracticeHub";
 import KnowledgeHub from "./pages/KnowledgeHub/KnowledgeHub";
 import Projects from "./pages/Projects/Projects";
 import Profile from "./pages/Profile/Profile";
