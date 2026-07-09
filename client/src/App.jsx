@@ -10,6 +10,10 @@ import Roadmaps from "./pages/Roadmaps/Roadmaps";
 import RoadmapPage from "./pages/Roadmaps/RoadmapPage/RoadmapPage";
 
 import PracticeHub from "./pages/practiceHub/PracticeHub";
+import KnowledgeHub from "./pages/KnowledgeHub/KnowledgeHub";
+import Projects from "./pages/Projects/Projects";
+import Profile from "./pages/Profile/Profile";
+import Settings from "./pages/Settings/Settings";
 
 function App() {
   return (
@@ -33,6 +37,22 @@ function App() {
         path="/practicehub"
         element={<PracticeHub />}
       />
+      <Route
+  path="/knowledgehub"
+  element={<KnowledgeHub />}
+/>
+      <Route
+  path="/projects"
+  element={<Projects />}
+/>
+    <Route
+    path="/profile"
+    element={<Profile />}
+/>
+      <Route
+    path="/settings"
+    element={<Settings />}
+/>
     </Routes>
   );
 }

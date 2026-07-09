@@ -1,31 +1,21 @@
 import "./Hero.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
   const [career, setCareer] = useState(0);
   const [resources, setResources] = useState(0);
   const [projects, setProjects] = useState(0);
 
   useEffect(() => {
-    let c = 0;
-    let r = 0;
-    let p = 0;
+    let c = 0, r = 0, p = 0;
 
     const timer = setInterval(() => {
-      if (c < 6) {
-        c++;
-        setCareer(c);
-      }
-
-      if (r < 250) {
-        r += 5;
-        setResources(r);
-      }
-
-      if (p < 100) {
-        p += 2;
-        setProjects(p);
-      }
+      if (c < 6) setCareer(++c);
+      if (r < 250) setResources(r += 5);
+      if (p < 100) setProjects(p += 2);
 
       if (c >= 6 && r >= 250 && p >= 100) {
         clearInterval(timer);
@@ -38,8 +28,6 @@ function Hero() {
   return (
     <section className="hero-section">
       <div className="container hero-grid">
-
-        {/* LEFT SIDE */}
 
         <div className="hero-left">
 
@@ -65,11 +53,21 @@ function Hero() {
 
           <div className="hero-buttons">
 
-            <button className="hero-primary">
+            <button
+              className="hero-primary"
+              onClick={() => navigate("/register")}
+            >
               Get Started
             </button>
 
-            <button className="hero-secondary">
+            <button
+              className="hero-secondary"
+              onClick={() =>
+                document.getElementById("careers")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
               Explore Careers
             </button>
 
@@ -96,8 +94,6 @@ function Hero() {
 
         </div>
 
-        {/* RIGHT SIDE */}
-
         <div className="hero-right">
 
           <div className="dashboard-preview">
@@ -105,11 +101,9 @@ function Hero() {
             <div className="dashboard-header">
 
               <div className="window-buttons">
-
                 <span className="red"></span>
                 <span className="yellow"></span>
                 <span className="green"></span>
-
               </div>
 
               <h4>Skill OS Dashboard</h4>
@@ -118,57 +112,72 @@ function Hero() {
 
             <div className="dashboard-content">
 
-              <div className="progress-card">
+              <div className="dashboard-grid">
 
-                <h5>Frontend Roadmap</h5>
+                <div className="progress-card">
+                  <h5>Frontend Roadmap</h5>
 
-                <div className="progress-bar">
-                  <div
-                    className="progress-fill"
-                    style={{ width: "68%" }}
-                  ></div>
+                  <div className="progress-bar">
+                    <div
+                      className="progress-fill"
+                      style={{ width: "68%" }}
+                    />
+                  </div>
+
+                  <p>68% Completed</p>
+
+                  <button
+                    className="resume-btn"
+                    onClick={() => navigate("/roadmaps/frontend")}
+                  >
+                    Continue →
+                  </button>
                 </div>
 
-                <p>68% Completed</p>
+                <div className="task-card">
+                  <h5>Today's Tasks</h5>
+                  <ul>
+                    <li>✅ React Components</li>
+                    <li>✅ CSS Grid</li>
+                    <li>⬜ React Router</li>
+                    <li>⬜ Firebase Basics</li>
+                  </ul>
+                </div>
 
-              </div>
+                <div className="xp-card">
+                  <h5>Career XP</h5>
+                  <h2>4820</h2>
+                  <span className="xp-level">Level 8 Explorer</span>
 
-              <div className="task-card">
+                  <div className="xp-mini">
+                    <div>
+                      <h4>7🔥</h4>
+                      <p>Day Streak</p>
+                    </div>
 
-                <h5>Today's Goal</h5>
+                    <div>
+                      <h4>64%</h4>
+                      <p>Placement Ready</p>
+                    </div>
+                  </div>
+                </div>
 
-                <ul>
-                  <li>✅ React Basics</li>
-                  <li>✅ Components</li>
-                  <li>⬜ Props</li>
-                  <li>⬜ Hooks</li>
-                </ul>
+                <div className="continue-card">
+                  <h5>Next Lesson</h5>
 
-              </div>
+                  <h3>JavaScript DOM</h3>
 
-              <div className="xp-card">
+                  <p>
+                    Continue your learning journey
+                    and unlock the next module.
+                  </p>
 
-                <h5>Career XP</h5>
-
-                <h2>4,820</h2>
-
-                <p>Level 8 Explorer</p>
-
-              </div>
-
-              <div className="continue-card">
-
-                <h5>Continue Learning</h5>
-
-                <p>
-                  JavaScript
-                  <br />
-                  DOM Manipulation
-                </p>
-
-                <button>
-                  Resume →
-                </button>
+                  <button
+                    onClick={() => navigate("/roadmaps/frontend")}
+                  >
+                    Resume Learning
+                  </button>
+                </div>
 
               </div>
 

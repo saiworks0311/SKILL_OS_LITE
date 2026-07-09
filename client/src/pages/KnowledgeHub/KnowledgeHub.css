@@ -1,60 +1,59 @@
-.practice-page{
+.knowledge-page{
     padding:40px;
     color:white;
     min-height:100vh;
     background:#0f1117;
 }
 
-.practice-subtitle{
-    color:#b7bdd0;
-    margin:10px 0 35px;
+.knowledge-subtitle{
+    color:#bfc4d8;
+    margin-bottom:35px;
 }
 
-.practice-grid{
+.knowledge-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:25px;
 }
 
-.practice-card{
+.knowledge-card{
     background:#1b1e27;
-    padding:25px;
     border-radius:18px;
+    padding:25px;
     transition:.3s;
 }
 
-.practice-card:hover{
+.knowledge-card:hover{
     transform:translateY(-4px);
     border:1px solid #7c5cfc;
 }
 
-.practice-card h2{
+.knowledge-card h2{
     margin-bottom:15px;
 }
 
-.practice-card p{
+.knowledge-card p{
     color:#bfc4d8;
     line-height:1.6;
 }
 
-.practice-card span{
+.knowledge-card span{
     display:inline-block;
     margin-top:15px;
     color:#7c5cfc;
     font-weight:600;
 }
 
-.practice-btn{
+.knowledge-btn{
     display:inline-block;
-    text-decoration:none;
     background:#7c5cfc;
     color:white;
+    text-decoration:none;
     padding:12px 20px;
     border-radius:10px;
     font-weight:600;
 }
 
-.practice-btn:hover{
-    background:#6b4ef0;
+.knowledge-btn:hover{
+    background:#6d4df5;
 }
-

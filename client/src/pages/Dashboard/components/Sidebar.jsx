@@ -1,13 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { logoutUser } from "../../../services/authService";
 
 function Sidebar() {
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logoutUser();
+      navigate("/login");
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="sidebar">
-
       <h2>Skill OS</h2>
 
       <ul>
-
         <li>
           <Link to="/dashboard">🏠 Dashboard</Link>
         </li>
@@ -21,11 +31,11 @@ function Sidebar() {
         </li>
 
         <li>
-          <Link to="/projects">📁 Projects</Link>
+          <Link to="/knowledgehub">📚 Knowledge Hub</Link>
         </li>
 
         <li>
-          <Link to="/knowledgehub">📚 Knowledge Hub</Link>
+          <Link to="/projects">📁 Projects</Link>
         </li>
 
         <li>
@@ -36,8 +46,13 @@ function Sidebar() {
           <Link to="/settings">⚙️ Settings</Link>
         </li>
 
+        <li
+          onClick={handleLogout}
+          style={{ cursor: "pointer" }}
+        >
+          🚪 Logout
+        </li>
       </ul>
-
     </div>
   );
 }

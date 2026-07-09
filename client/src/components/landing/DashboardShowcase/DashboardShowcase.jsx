@@ -7,104 +7,121 @@ function DashboardShowcase() {
       <div className="container">
 
         <div className="section-heading">
-
           <span>DASHBOARD</span>
-
           <h2>Your Personal Learning Workspace</h2>
-
           <p>
-            Everything you need is organized in one beautiful dashboard.
+            Manage your roadmap, projects, practice and achievements
+            from one intelligent dashboard.
           </p>
-
         </div>
 
-        <div className="dashboard-preview-card">
+        <div className="dashboard-container">
 
-          <div className="dashboard-sidebar">
+          {/* Left */}
 
-            <div className="sidebar-item active">
-              Dashboard
+          <div className="dashboard-left">
+
+            <div className="profile-card">
+
+              <h2>Frontend Developer</h2>
+
+              <p>
+                Continue your personalized learning journey.
+              </p>
+
+              <button>Resume Learning</button>
+
             </div>
 
-            <div className="sidebar-item">
-              Roadmap
+            <div className="stats-grid">
+
+              <div className="stat-box">
+                <h4>Roadmap</h4>
+                <h2>68%</h2>
+              </div>
+
+              <div className="stat-box">
+                <h4>Career XP</h4>
+                <h2>4820</h2>
+              </div>
+
             </div>
 
-            <div className="sidebar-item">
-              Notes
-            </div>
+            <div className="progress-card">
 
-            <div className="sidebar-item">
-              Projects
-            </div>
+              <h3>Current Progress</h3>
 
-            <div className="sidebar-item">
-              Practice
+              <div className="progress-bar">
+                <div
+                  className="progress-fill"
+                  style={{ width: "68%" }}
+                />
+              </div>
+
+              <span>68% Completed</span>
+
             </div>
 
           </div>
 
-          <div className="dashboard-main">
+          {/* Right */}
 
-            <div className="dashboard-row">
+          <div className="dashboard-right">
 
-              <div className="mini-card">
+            <div className="task-card">
 
-                <h3>Roadmap Progress</h3>
+              <h3>Today's Tasks</h3>
 
-                <h1>68%</h1>
+              <ul>
+                <li>✅ React Components</li>
+                <li>✅ CSS Grid</li>
+                <li>⬜ React Router</li>
+                <li>⬜ API Integration</li>
+              </ul>
 
-              </div>
+            </div>
 
-              <div className="mini-card">
+            <div className="certificate-card">
 
-                <h3>Career XP</h3>
+              <h3>Achievements</h3>
 
-                <h1>4820</h1>
+              <div className="badge-row">
+
+                <span className="badge">🏆 HTML</span>
+
+                <span className="badge">⚡ CSS</span>
+
+                <span className="badge">🔥 React</span>
+
+                <span className="badge">💻 Git</span>
 
               </div>
 
             </div>
 
-            <div className="dashboard-row">
+            <div className="bottom-grid">
 
-              <div className="large-card">
+              <div className="small-card">
 
-                <h3>Today's Tasks</h3>
+                <h4>Projects</h4>
 
-                <ul>
-
-                  <li>✔ React Components</li>
-
-                  <li>✔ CSS Grid</li>
-
-                  <li>⬜ React Router</li>
-
-                  <li>⬜ API Calls</li>
-
-                </ul>
+                <h2>12</h2>
 
               </div>
 
-              <div className="large-card">
+              <div className="small-card">
 
-                <h3>Continue Learning</h3>
+                <h4>Practice</h4>
 
-                <p>
+                <h2>95</h2>
 
-                  JavaScript
+              </div>
 
-                  <br />
+              <div className="small-card">
 
-                  DOM Manipulation
+                <h4>Streak</h4>
 
-                </p>
-
-                <button>
-
-                  Resume →
-
-                </button>
+                <h2>7🔥</h2>
 
               </div>
 

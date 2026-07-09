@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,21 +16,16 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className={scrolled ? "navbar scrolled" : "navbar"}>
       <div className="container navbar-wrapper">
-        {/* Logo */}
 
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <div className="logo-icon">
             <span>◈</span>
           </div>
@@ -35,37 +33,33 @@ function Navbar() {
           <div className="logo-text">
             Skill<span>OS</span>
           </div>
-        </a>
-
-        {/* Navigation */}
+        </Link>
 
         <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
-          <a href="#features" onClick={closeMenu}>
-            Features
-          </a>
+          <a href="#features" onClick={closeMenu}>Features</a>
 
-          <a href="#careers" onClick={closeMenu}>
-            Careers
-          </a>
+          <a href="#careers" onClick={closeMenu}>Careers</a>
 
-          <a href="#roadmaps" onClick={closeMenu}>
+          <Link to="/roadmaps" onClick={closeMenu}>
             Roadmaps
-          </a>
+          </Link>
 
-          <a href="#about" onClick={closeMenu}>
-            About
-          </a>
+          <a href="#about" onClick={closeMenu}>About</a>
 
-          <button className="nav-login">
+          <button
+            className="nav-login"
+            onClick={() => navigate("/login")}
+          >
             Login
           </button>
 
-          <button className="nav-primary">
+          <button
+            className="nav-primary"
+            onClick={() => navigate("/register")}
+          >
             Get Started
           </button>
         </nav>
-
-        {/* Mobile Toggle */}
 
         <button
           className="mobile-button"
@@ -73,6 +67,7 @@ function Navbar() {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
+
       </div>
     </header>
   );
